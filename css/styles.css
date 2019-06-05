@@ -1,0 +1,99 @@
+.mapbox-logo,
+.leaflet-control-attribution {
+    display: none;
+}
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+a {
+    color: #003580;
+    font-weight: bold;
+}
+
+a:hover {
+    opacity: .75;
+}
+
+.map-title {
+    position: absolute;
+    z-index: 1000;
+}
+
+#map {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 600;
+}
+
+.icon:hover {
+    opacity: .7;
+}
+
+
+/* TOOLTIP */
+
+.leaflet-tooltip {
+    font-family: 'Alegreya Sans', sans-serif;
+    border-radius: 4px;
+}
+
+.leaflet-tooltip-container {
+    display: none;
+}
+
+.tooltip-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 4px;
+}
+
+.tooltip-sub {
+    font-size: 16px;
+    padding-bottom: 4px;
+}
+
+/* SITE MEDIA DIVS */
+
+.site-media {
+    display: none;
+}
+
+
+/* INFO MODALS */
+
+.info-modal {
+    font-family: 'Alegreya Sans', sans-serif;
+    position: absolute;
+    top: 176px;
+    left: 10px;
+    width: 33%;
+    max-height: 55%;
+    overflow: auto;
+    z-index: 1000;
+}
+
+.site-title {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 38px;
+    padding: 7px 0;
+}
+
+.site-subtitle {
+    font-size: 22px;
+    padding: 7px 0;
+}
+
+.site-body {
+    padding: 10px 0 7px 0;
+}
