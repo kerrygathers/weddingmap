@@ -1,8 +1,11 @@
-﻿name,event,time,day,type,lat,lon
-Miss Ada,,,,,,
-Do or Dive,,,,,,
-501 Union,,,,,,
-Speedy Romeo,,,,,,
-Lavender Lake,,,,,,
-Royal Palms Shuffleboard Club,,,,,,
-Sisters,,,,,,
+﻿name,address,event,time,day,type,lat,lon
+Miss Ada,184 Dekalb Ave,,,,food,40.689436,-73.974575
+Do or Dive Bar,1108 Bedford Ave,,,,drinks,40.6867621,-73.9569672
+501 Union,501 Union St,Wedding,,,event,40.6798558,-73.9911934
+Speedy Romeo,376 Classon Ave,,,,food,40.6875171,-73.9621953
+Lavender Lake,383 Carroll St,After Party,,SAT 3/28,event,40.67861,-73.991937
+Royal Palms Shuffleboard Club,514 Union St,Games,,FRI 3/27,event,40.6786376,-73.9891038
+Sisters,900 Fulton St,Welcome Drinks,,FRI 3/27,event,40.6828974,-73.9673576
+Pequeña,86 S Portland Ave,,,,food,40.686887,-73.974711
+BierWax,556 Vanderbilt Ave,,,,drinks,40.6800203,-73.9682762
+Olde Brooklyn Bagel Shoppe,645 Vanderbilt Ave,,,,bagels,40.6777268,-73.9706571

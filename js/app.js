@@ -24,8 +24,8 @@
         position: 'bottomright'
     }).addTo(map);
 
-    /*
-    var csvData = omnivore.csv('data/itinerary.csv')
+
+    var csvData = omnivore.csv('data/places.csv')
         .on('ready', function (e) {
             drawMap(e.target.toGeoJSON());
         })
@@ -34,13 +34,14 @@
         });
 
 
-    function drawMap(tripStops) {
+    function drawMap(places) {
+
 
         var options = {
             pointToLayer: function (feature, latlng) {
 
                 var icon = L.icon({
-                    iconUrl: "./icons/site.svg",
+                    iconUrl: "./svgs/marker-15.svg",
                     iconSize: [18, 18],
                     popupAnchor: [-22, -22],
                     className: "icon"
@@ -52,30 +53,17 @@
             },
             onEachFeature: function (feature, layer) {
 
-                layer.bindTooltip("<p class='tooltip-title'>" + feature.properties.site + "</p>" +
-                    "<p class='tooltip-sub'>" + feature.properties.place + ", " + feature.properties.country + "</p>");
+                var props = feature.properties;
 
-                layer.on({
-                    click: closeIntro
-                });
+                layer.bindTooltip("<p class='tooltip-title'>" + props.name + "</p>" +
+                    "<p class='tooltip-sub'>" + props.address + "</p>");
             }
+
         }
 
-        var tripStops = L.geoJson(tripStops, options).addTo(map);
+        var places = L.geoJson(places, options).addTo(map);
 
     }
-
-
-            // populate HTML elements with relevant info
-            $(".site-title span:first-child").html(props.site);
-
-            // populate HTML elements with relevant info
-            $(".site-subtitle span:first-child").html(props.place + ", " + props.country);
-
-        })
-    }
-
-*/
 
 
 })();
