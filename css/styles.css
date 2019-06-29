@@ -76,6 +76,9 @@ a:hover {
     height: 100%;
     width: 100%;
     z-index: 600;
+}
+
+.comtainer {
     border: 2px solid rgba(213, 167, 71, 0.8);
 }
 
