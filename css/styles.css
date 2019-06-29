@@ -4,13 +4,15 @@
 }
 
 body {
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Futura', sans-serif;
+    color: #1e1e1e;
 }
 
 p {
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Futura', sans-serif;
     font-size: 16px;
     line-height: 20px;
+    color: #1e1e1e;
 }
 
 a {
@@ -22,8 +24,50 @@ a:hover {
     opacity: .75;
 }
 
+.calendar {
+    position: fixed;
+    top: 0;
+    width: 500px;
+    padding: 4px;
+    background: rgba(255, 255, 255, 0.90);
+    margin: auto;
+    z-index: 1000;
+    text-align: center;
+    left: 50%;
+    margin-left: -250px;
+    overflow-x: auto;
+}
+
+.calendar-title {
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #1e1e1e;
+}
+
+.calendar-activity {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 10px 0 0 0;
+}
+
+.calendar-body {
+    font-size: 13px;
+}
+
+.calendar-place {
+    font-weight: 600;
+    color: #d5a747;
+}
+
 .map-title {
     position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 320px;
+    padding: 7px 0 0 7px;
+    background: rgba(255, 255, 255, 0.90);
     z-index: 1000;
 }
 
