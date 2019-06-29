@@ -3,7 +3,7 @@
     var options = {
         center: [40.687, -73.976],
         zoom: 14.1,
-        zoomSnap: .1,
+        zoomSnap: .5,
         zoomControl: false
     }
 
