@@ -10,13 +10,13 @@ body {
 
 p {
     font-family: 'Futura', sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 20px;
     color: #1e1e1e;
 }
 
 a {
-    color: #003580;
+    color: #d5a747;
     font-weight: bold;
 }
 
@@ -29,9 +29,9 @@ a:hover {
     top: 0;
     width: 500px;
     padding: 4px;
-    background: rgba(255, 255, 255, 0.90);
+    background: rgba(255, 255, 255, 0.9);
     margin: auto;
-    z-index: 1000;
+    z-index: 650;
     text-align: center;
     left: 50%;
     margin-left: -250px;
@@ -66,6 +66,20 @@ a:hover {
     cursor: pointer;
 }
 
+.legend {
+    text-align: left;
+    padding-left: 26px;
+}
+
+.legend-name {
+    font-size: 11px;
+}
+
+.legend-icon {
+    margin-top: 2px;
+    margin-right: 23px;
+}
+
 .map-title {
     position: absolute;
     bottom: 0;
@@ -94,23 +108,43 @@ a:hover {
 
 /* TOOLTIP */
 
-.leaflet-tooltip {
+.leaflet-popup {
     font-family: 'Futura', sans-serif;
-    border-radius: 4px;
 }
 
-.leaflet-tooltip-container {
-    display: none;
+.leaflet-popup-content-wrapper,
+.leaflet-popup-content {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 0 !important;
+    z-index: 1000;
 }
 
-.tooltip-title {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    padding-bottom: 4px;
+.leaflet-popup-content {
+    max-width: 400px;
 }
 
-.tooltip-sub {
-    font-size: 13px;
-    padding-bottom: 4px;
+.leaflet-popup-content-wrapper {}
+
+p.tooltip-title {
+    font-family: 'Futura', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 16px 0 6px 0;
+}
+
+a.tooltip-link {
+    color: #d5a747;
+}
+
+
+p.tooltip-body {
+    margin: 6px 0;
+}
+
+svg.icon.popup-link {
+    font-size: 20px;
+    font-weight: 600;
+    color: #d5a747;
+    display: inline;
+    margin-bottom: -5px;
 }

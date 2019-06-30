@@ -40,12 +40,25 @@
         var options = {
             pointToLayer: function (feature, latlng) {
 
-                var icon = L.icon({
-                    iconUrl: "./svgs/marker-15.svg",
-                    iconSize: [18, 18],
-                    popupAnchor: [-22, -22],
-                    className: "icon"
-                });
+                if (feature.properties.type == "event") {
+
+                    var icon = L.icon({
+                        iconUrl: feature.properties.icon,
+                        iconSize: [21, 21],
+                        popupAnchor: [-0, -0],
+                        className: "icon-event"
+                    });
+                }
+
+                if (feature.properties.type != "event") {
+
+                    var icon = L.icon({
+                        iconUrl: feature.properties.icon,
+                        iconSize: [18, 18],
+                        popupAnchor: [-0, -0],
+                        className: "icon-event"
+                    });
+                }
 
                 return L.marker(latlng, {
                     icon: icon
@@ -55,14 +68,25 @@
 
                 var props = feature.properties;
 
-                layer.bindTooltip("<p class='tooltip-title'>" + props.name + "</p>" +
-                    "<p class='tooltip-sub'>" + props.address + "</p>");
+                layer.bindPopup("<p class='tooltip-title'>" + props.name + " <a href='" + props.website + "' target='_blank'>" + " <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p>" + "<p class='tooltip-body'>" + props.address + " <a href='" + props.directions + "' target='_blank'>" + "<svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p>" + "<p class='tooltip-body'>" + props.notes + "</p>");
             }
 
         }
 
         var places = L.geoJson(places, options).addTo(map);
 
+    }
+
+    map.on('popupopen', function (e) {
+        alert(e.marker._leaflet_id);
+    });
+
+    // northeast zoom button
+    var unionZoom = document.getElementById('union');
+
+    unionZoom.onclick = function () {
+        map.setView([40.6799227, -73.9891736], 15);
+        $('#union').show();
     }
 
 
