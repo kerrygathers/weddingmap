@@ -77,17 +77,64 @@
 
     }
 
-    map.on('popupopen', function (e) {
-        alert(e.marker._leaflet_id);
-    });
-
-    // northeast zoom button
     var unionZoom = document.getElementById('union');
 
     unionZoom.onclick = function () {
-        map.setView([40.6799227, -73.9891736], 15);
-        $('#union').show();
+
+        var latlng = L.latLng(40.6799227, -73.9891736);
+
+        map.setView(latlng, 15);
+
+        var popup = L.popup()
+            .setLatLng(latlng)
+            .setContent("<p class='tooltip-title'>501 Union <a href='http://www.501union.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>501 Union St <a href='https://www.google.com/maps/dir/?saddr=&daddr=501+Union+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'>Notes about 501 Union</p>")
+            .openOn(map);
     }
+
+    var sistersZoom = document.getElementById('sisters');
+
+    sistersZoom.onclick = function () {
+
+        var latlng = L.latLng(40.6829068, -73.9653217);
+
+        map.setView(latlng, 15);
+
+        var popup = L.popup()
+            .setLatLng(latlng)
+            .setContent("<p class='tooltip-title'>Sisters <a href='http://sistersbklyn.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>900 Fulton St <a href='https://www.google.com/maps/dir/?saddr=&daddr=900+Fulton+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'>Notes about Sisters</p>")
+            .openOn(map);
+
+    }
+
+    var royalZoom = document.getElementById('royal');
+
+    royalZoom.onclick = function () {
+
+        var latlng = L.latLng(40.678637, -73.9870479);
+
+        map.setView(latlng, 15);
+
+        var popup = L.popup()
+            .setLatLng(latlng)
+            .setContent("<p class='tooltip-title'>Royal Palms Shuffleboard Club <a href='https://www.royalpalmsshuffle.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>514 Union St <a href='https://www.google.com/maps/dir/?saddr=&daddr=514+Union+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'>Notes about Royal Palms</p>")
+            .openOn(map);
+    }
+
+    var lavenderZoom = document.getElementById('lavender');
+
+    lavenderZoom.onclick = function () {
+
+        var latlng = L.latLng(40.6786174, -73.9898909);
+
+        map.setView(latlng, 15);
+
+        var popup = L.popup()
+            .setLatLng(latlng)
+            .setContent("<p class='tooltip-title'>Lavender Lake <a href='http://www.lavenderlake.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>383 Carroll St <a href='https://www.google.com/maps/dir/?saddr=&daddr=383+Carroll+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'>Notes about Lavender Lake</p>")
+            .openOn(map);
+
+    }
+
 
 
 })();
