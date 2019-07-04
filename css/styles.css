@@ -4,14 +4,14 @@
 }
 
 body {
-    font-family: 'Futura', sans-serif;
+    font-family: 'brandon-grotesque', sans-serif;
     color: #1e1e1e;
 }
 
 p {
-    font-family: 'Futura', sans-serif;
-    font-size: 13px;
-    line-height: 20px;
+    font-family: 'brandon-grotesque', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
     color: #1e1e1e;
 }
 
@@ -39,25 +39,25 @@ a:hover {
 }
 
 .calendar-title {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px;
     padding-bottom: 2px;
     border-bottom: 2px solid #1e1e1e;
 }
 
 .calendar-activity {
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
     padding: 10px 0 0 0;
 }
 
 .calendar-body {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .calendar-place {
-    font-weight: 600;
+    font-weight: 700;
     color: #d5a747;
 }
 
@@ -109,7 +109,7 @@ a:hover {
 /* TOOLTIP */
 
 .leaflet-popup {
-    font-family: 'Futura', sans-serif;
+    font-family: 'brandon-grotesque', sans-serif;
 }
 
 .leaflet-popup-content-wrapper,
@@ -126,9 +126,9 @@ a:hover {
 .leaflet-popup-content-wrapper {}
 
 p.tooltip-title {
-    font-family: 'Futura', sans-serif;
+    font-family: 'brandon-grotesque', sans-serif;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 18px;
     margin: 16px 0 6px 0;
 }
 
