@@ -2,7 +2,7 @@
 
     var options = {
         center: [40.6799227, -73.9891736],
-        zoom: 10,
+        zoom: 11,
         zoomSnap: .5,
         zoomControl: false,
         doubleClickZoom: false,
@@ -17,8 +17,8 @@
     var tiles = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.{ext}', {
         attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
         subdomains: 'abcd',
-        minZoom: 10,
-        maxZoom: 10,
+        minZoom: 11,
+        maxZoom: 11,
         ext: 'png'
     });
 
