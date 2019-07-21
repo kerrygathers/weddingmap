@@ -106,17 +106,17 @@
 
     }
 
-    var royalZoom = document.getElementById('royal');
+    var diveZoom = document.getElementById('dive');
 
-    royalZoom.onclick = function () {
+    diveZoom.onclick = function () {
 
-        var latlng = L.latLng(40.678637, -73.9870479);
+        var latlng = L.latLng(40.686764, -73.9548035);
 
         map.setView(latlng, 15);
 
         var popup = L.popup()
             .setLatLng(latlng)
-            .setContent("<p class='tooltip-title'>Royal Palms Shuffleboard Club <a href='https://www.royalpalmsshuffle.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>514 Union St <a href='https://www.google.com/maps/dir/?saddr=&daddr=514+Union+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'>Notes about Royal Palms</p>")
+            .setContent("<p class='tooltip-title'>Do or Dive Bar <a href='https://www.royalpalmsshuffle.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>514 Union St <a href='https://www.google.com/maps/dir/?saddr=&daddr=1108+Bedford+Ave+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'>Do or Dive is Rookie's favorite bar, and not just because it's the only bar that will let him hang out inside. If you're in town in time, meet us here and try the frozen coffee.</p>")
             .openOn(map);
     }
 

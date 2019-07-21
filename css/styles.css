@@ -68,7 +68,7 @@ a:hover {
 
 .legend {
     text-align: left;
-    padding-left: 26px;
+    padding-left: 6px;
 }
 
 .legend-name {
@@ -120,7 +120,7 @@ a:hover {
 }
 
 .leaflet-popup-content {
-    max-width: 400px;
+    max-width: 800px !important;
 }
 
 .leaflet-popup-content-wrapper {}
