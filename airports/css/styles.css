@@ -1,0 +1,107 @@
+.mapbox-logo,
+.leaflet-control-attribution {
+    display: none;
+}
+
+body {
+    font-family: 'brandon-grotesque', sans-serif;
+    color: #1e1e1e;
+}
+
+p {
+    font-family: 'brandon-grotesque', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    color: #1e1e1e;
+}
+
+a {
+    color: #d5a747;
+    font-weight: bold;
+}
+
+a:hover {
+    opacity: .75;
+}
+
+
+#map {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 600;
+}
+
+.comtainer {
+    border: 2px solid rgba(213, 167, 71, 0.8);
+}
+
+.icon:hover {
+    opacity: .7;
+}
+
+/* AIRPORT LABELS */
+
+.jfk,
+.lga,
+.ewr {
+    font-family: 'brandon-grotesque', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    background-color: #d5a747;
+}
+
+.union {
+    font-family: 'brandon-grotesque', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    color: #1e1e1e;
+    text-shadow: -1.5px 0 #fff, 0 1.5px #fff, 1.5px 0 #fff, 0 -1.5px #fff;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+/* TOOLTIP */
+
+.leaflet-popup {
+    font-family: 'brandon-grotesque', sans-serif;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-content {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 0 !important;
+    z-index: 1000;
+}
+
+.leaflet-popup-content {
+    max-width: 800px !important;
+}
+
+.leaflet-popup-content-wrapper {}
+
+p.tooltip-title {
+    font-family: 'brandon-grotesque', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 16px 0 6px 0;
+}
+
+a.tooltip-link {
+    color: #d5a747;
+}
+
+
+p.tooltip-body {
+    margin: 6px 0;
+}
+
+svg.icon.popup-link {
+    font-size: 20px;
+    font-weight: 600;
+    color: #d5a747;
+    display: inline;
+    margin-bottom: -5px;
+}
