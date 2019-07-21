@@ -1,0 +1,150 @@
+.mapbox-logo,
+.leaflet-control-attribution {
+    display: none;
+}
+
+body {
+    font-family: 'brandon-grotesque', sans-serif;
+    color: #1e1e1e;
+}
+
+p {
+    font-family: 'brandon-grotesque', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    color: #1e1e1e;
+}
+
+a {
+    color: #d5a747;
+    font-weight: bold;
+}
+
+a:hover {
+    opacity: .75;
+}
+
+.calendar {
+    position: fixed;
+    top: 0;
+    width: 500px;
+    padding: 4px;
+    background: rgba(255, 255, 255, 0.92);
+    margin: auto;
+    z-index: 650;
+    text-align: center;
+    left: 50%;
+    margin-left: -250px;
+    overflow-x: auto;
+}
+
+.calendar-title {
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #1e1e1e;
+}
+
+.calendar-activity {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 0 0 0;
+}
+
+.calendar-body {
+    font-size: 15px;
+}
+
+.calendar-place {
+    font-weight: 700;
+    color: #d5a747;
+}
+
+.calendar-place:hover {
+    color: rgba(213, 167, 71, 0.75);
+    cursor: pointer;
+}
+
+.legend {
+    text-align: left;
+    padding-left: 6px;
+}
+
+.legend-name {
+    font-size: 11px;
+}
+
+.legend-icon {
+    margin-top: 2px;
+    margin-right: 23px;
+}
+
+.map-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 320px;
+    padding: 7px 0 0 7px;
+    background: rgba(255, 255, 255, 0.92);
+    z-index: 1000;
+}
+
+#map {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 600;
+}
+
+.comtainer {
+    border: 2px solid rgba(213, 167, 71, 0.8);
+}
+
+.icon:hover {
+    opacity: .7;
+}
+
+
+/* TOOLTIP */
+
+.leaflet-popup {
+    font-family: 'brandon-grotesque', sans-serif;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-content {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 0 !important;
+    z-index: 1000;
+}
+
+.leaflet-popup-content {
+    max-width: 800px !important;
+}
+
+.leaflet-popup-content-wrapper {}
+
+p.tooltip-title {
+    font-family: 'brandon-grotesque', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 16px 0 6px 0;
+}
+
+a.tooltip-link {
+    color: #d5a747;
+}
+
+
+p.tooltip-body {
+    margin: 6px 0;
+}
+
+svg.icon.popup-link {
+    font-size: 20px;
+    font-weight: 600;
+    color: #d5a747;
+    display: inline;
+    margin-bottom: -5px;
+}

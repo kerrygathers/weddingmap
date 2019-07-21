@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Kayak Widget</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <link href='https://api.mapbox.com/mapbox-assembly/v0.21.2/assembly.min.css' rel='stylesheet'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/sym4fgw.css">
+    <link href='css/styles.css' rel='stylesheet' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
+
+</head>
+
+<body>
+
+    <div style="height:500px;width: 500px;">
+        <div id="kayakSearchWidgetContainer"></div>
+    </div>
+    <script type="text/javaScript" src="https://www.kayak.com/affiliate/widget-v2.js"></script>
+    <script type="text/javaScript">
+        KAYAK.embed({ container: document.getElementById("kayakSearchWidgetContainer"), hostname: "www.kayak.com", autoPosition: true, defaultProduct: "flights", enabledProducts: ["flights"], startDate: "2020-03-26", endDate: "2020-03-29", origin: "", destination: "New York (NYC)", travelers: "2", ssl: true, affiliateId: "acme_corp", isInternalLoad: false, lc: "en", cc: "us", mc: "EUR" });
+    </script>
+
+
+    <script async defer src="https://api.mapbox.com/mapbox-assembly/v0.21.2/assembly.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</body>
+
+</html>
