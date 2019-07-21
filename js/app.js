@@ -87,7 +87,7 @@
 
         var popup = L.popup()
             .setLatLng(latlng)
-            .setContent("<p class='tooltip-title'>501 Union <a href='http://www.501union.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>501 Union St <a href='https://www.google.com/maps/dir/?saddr=&daddr=501+Union+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'>Notes about 501 Union</p>")
+            .setContent("<p class='tooltip-title'>501 Union <a href='http://www.501union.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>501 Union St <a href='https://www.google.com/maps/dir/?saddr=&daddr=501+Union+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'></p>")
             .openOn(map);
     }
 
@@ -101,7 +101,7 @@
 
         var popup = L.popup()
             .setLatLng(latlng)
-            .setContent("<p class='tooltip-title'>Sisters <a href='http://sistersbklyn.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>900 Fulton St <a href='https://www.google.com/maps/dir/?saddr=&daddr=900+Fulton+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'>Notes about Sisters</p>")
+            .setContent("<p class='tooltip-title'>Sisters <a href='http://sistersbklyn.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>900 Fulton St <a href='https://www.google.com/maps/dir/?saddr=&daddr=900+Fulton+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'>The first meal Hallie and Kerry had as residents of Brooklyn was at Sisters, so it's the perfect place to welcome you to the neighborhood.</p>")
             .openOn(map);
 
     }
@@ -130,7 +130,7 @@
 
         var popup = L.popup()
             .setLatLng(latlng)
-            .setContent("<p class='tooltip-title'>Lavender Lake <a href='http://www.lavenderlake.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>383 Carroll St <a href='https://www.google.com/maps/dir/?saddr=&daddr=383+Carroll+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'>Notes about Lavender Lake</p>")
+            .setContent("<p class='tooltip-title'>Lavender Lake <a href='http://www.lavenderlake.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>383 Carroll St <a href='https://www.google.com/maps/dir/?saddr=&daddr=383+Carroll+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'></p>")
             .openOn(map);
 
     }
