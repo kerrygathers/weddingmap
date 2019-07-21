@@ -1,7 +1,7 @@
 (function () {
 
     var options = {
-        center: [40.6799227, -73.9891736],
+        center: [40.696060, -73.955429],
         zoom: 11,
         zoomSnap: .5,
         zoomControl: false,

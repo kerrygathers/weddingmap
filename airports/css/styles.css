@@ -63,6 +63,18 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.0);
 }
 
+.jfk:hover,
+.lga:hover,
+.ewr:hover {
+    background-color: #d5a747;
+    cursor: default;
+}
+
+.btn.union:hover {
+    background-color: rgba(0, 0, 0, 0.0);
+    cursor: default;
+}
+
 /* TOOLTIP */
 
 .leaflet-popup {
