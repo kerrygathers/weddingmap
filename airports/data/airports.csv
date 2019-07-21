@@ -1,5 +1,2 @@
 ﻿name,address,website,directions,notes,label,lat,lon,icon
 501 Union,501 Union St,http://www.501union.com/,https://www.google.com/maps/dir/?saddr=&daddr=501+Union+St+Brooklyn+NY,,501 Union,40.6799227,-73.9891736,./svgs/star-15.svg
-JFK,null,null,null,null,null,40.6435274,-73.7828574,./svgs/airport-15.svg
-LaGuardia (LGA),null,null,null,null,null,40.7769271,-73.8739659,./svgs/airport-15.svg
-Newark Liberty (EWR),null,null,null,null,null,40.6895314,-74.1744624,./svgs/airport-15.svg
