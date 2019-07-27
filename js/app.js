@@ -1,7 +1,7 @@
 (function () {
 
     var options = {
-        center: [40.687, -73.976],
+        center: [40.673, -73.972],
         zoom: 14.1,
         zoomSnap: .5,
         zoomControl: false
@@ -19,11 +19,6 @@
     });
 
     tiles.addTo(map);
-
-    L.control.zoom({
-        position: 'bottomright'
-    }).addTo(map);
-
 
     var csvData = omnivore.csv('data/places.csv')
         .on('ready', function (e) {
