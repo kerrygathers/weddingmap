@@ -78,6 +78,7 @@ a:hover {
 
 .legend-icon {
     margin-top: 2px;
+    height: 16px;
 }
 
 .right-icon {
@@ -207,7 +208,7 @@ svg.icon.popup-link {
     }
 
     .right-icon {
-        padding-right: 30px;
+        padding-right: 34px;
     }
 
     .legend-graph {
@@ -229,4 +230,9 @@ svg.icon.popup-link {
     .map-container {
         top: 230px;
     }
+
+    .legend-icon {
+        height: 14px;
+    }
+
 }
