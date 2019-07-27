@@ -24,14 +24,17 @@ a:hover {
     opacity: .75;
 }
 
+
+.calendar-container {}
+
+
 .grid.calendar {
-    position: relative;
+    position: absolute;
+    display: inline-block;
     top: 0;
     width: 640px;
     height: 206px;
     background: #fff;
-    margin-left: auto;
-    margin-right: auto;
     z-index: 650;
     text-align: center;
 }
@@ -85,11 +88,10 @@ a:hover {
 .legend-graph {
     padding-top: 30px;
     padding-left: 12px;
-    padding-right: 5px;
 }
 
 .map-title {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 320px;
@@ -98,15 +100,19 @@ a:hover {
     z-index: 1000;
 }
 
-#map {
-    position: absolute;
-    height: 100%;
+.map-container {
+    position: fixed;
     width: 100%;
-    z-index: 600;
+    top: 206px;
+    bottom: 0;
+    left: 0;
 }
 
-.comtainer {
-    border: 2px solid rgba(213, 167, 71, 0.8);
+#map {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 600;
 }
 
 .icon:hover {
@@ -174,13 +180,12 @@ svg.icon.popup-link {
         height: 238px;
     }
 
+    .map-container {
+        top: 238px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    .grid.calendar {
-        width: 100%;
-        height:
-    }
 
     .calendar-title {
         font-size: 14px;
@@ -219,5 +224,9 @@ svg.icon.popup-link {
     .grid.calendar {
         width: 100%;
         height: 230px;
+    }
+
+    .map-container {
+        top: 230px;
     }
 }
