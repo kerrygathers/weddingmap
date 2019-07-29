@@ -63,7 +63,17 @@
 
                 var props = feature.properties;
 
-                layer.bindPopup("<p class='tooltip-title'>" + props.name + " <a href='" + props.website + "' target='_blank'>" + " <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p>" + "<p class='tooltip-body'>" + props.address + " <a href='" + props.directions + "' target='_blank'>" + "<svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p>" + "<p class='tooltip-body'>" + props.notes + "</p>");
+                if (props.name == "Home") {
+
+                    layer.bindPopup("<p class='tooltip-title'>" + props.name + "</p>" + "<p class='tooltip-body'>" + props.address + "</p>" + "<p class='tooltip-body'>" + props.notes + "</p>");
+
+                }
+
+                if (props.name != "Home") {
+
+                    layer.bindPopup("<p class='tooltip-title'>" + props.name + " <a href='" + props.website + "' target='_blank'>" + " <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p>" + "<p class='tooltip-body'>" + props.address + " <a href='" + props.directions + "' target='_blank'>" + "<svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p>" + "<p class='tooltip-body'>" + props.notes + "</p>");
+
+                }
             }
 
         }
@@ -82,7 +92,7 @@
 
         var popup = L.popup()
             .setLatLng(latlng)
-            .setContent("<p class='tooltip-title'>501 Union <a href='http://www.501union.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>501 Union St <a href='https://www.google.com/maps/dir/?saddr=&daddr=501+Union+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'></p>")
+            .setContent("<p class='tooltip-title'>501 Union <a href='http://www.501union.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>501 Union St <a href='https://www.google.com/maps/dir/?saddr=&daddr=501+Union+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'>This space with over 100 years of history in the Gowanus neighborhood is finally peaking as the venue for Hallie and Kerry's wedding and reception.</p>")
             .openOn(map);
     }
 
@@ -125,7 +135,7 @@
 
         var popup = L.popup()
             .setLatLng(latlng)
-            .setContent("<p class='tooltip-title'>Lavender Lake <a href='http://www.lavenderlake.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>383 Carroll St <a href='https://www.google.com/maps/dir/?saddr=&daddr=383+Carroll+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'></p>")
+            .setContent("<p class='tooltip-title'>Lavender Lake <a href='http://www.lavenderlake.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>383 Carroll St <a href='https://www.google.com/maps/dir/?saddr=&daddr=383+Carroll+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'>For folks who are still thirsty after the reception, the party will move down the street to Lavender Lake. The spotlight may still be on Hallie and Kerry, but the drinks are you.</p>")
             .openOn(map);
 
     }
