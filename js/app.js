@@ -135,7 +135,7 @@
 
         var popup = L.popup()
             .setLatLng(latlng)
-            .setContent("<p class='tooltip-title'>Lavender Lake <a href='http://www.lavenderlake.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>383 Carroll St <a href='https://www.google.com/maps/dir/?saddr=&daddr=383+Carroll+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'>For folks who are still thirsty after the reception, the party will move down the street to Lavender Lake. The spotlight may still be on Hallie and Kerry, but the drinks are you.</p>")
+            .setContent("<p class='tooltip-title'>Lavender Lake <a href='http://www.lavenderlake.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>383 Carroll St <a href='https://www.google.com/maps/dir/?saddr=&daddr=383+Carroll+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'>For folks who are still thirsty after the reception, the party will move down the street to Lavender Lake. The spotlight may still be on Hallie and Kerry, but the drinks are on you.</p>")
             .openOn(map);
 
     }
