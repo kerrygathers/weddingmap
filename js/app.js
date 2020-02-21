@@ -96,17 +96,17 @@
             .openOn(map);
     }
 
-    var sistersZoom = document.getElementById('sisters');
+    var commissionerZoom = document.getElementById('commissioner');
 
-    sistersZoom.onclick = function () {
+    commissionerZoom.onclick = function () {
 
-        var latlng = L.latLng(40.6829068, -73.9653217);
+        var latlng = L.latLng(40.674863, -73.981371);
 
         map.setView(latlng, 15);
 
         var popup = L.popup()
             .setLatLng(latlng)
-            .setContent("<p class='tooltip-title'>Sisters <a href='http://sistersbklyn.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>900 Fulton St <a href='https://www.google.com/maps/dir/?saddr=&daddr=900+Fulton+St+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'>The first meal Hallie and Kerry had as residents of Brooklyn was at Sisters, so it's the perfect place to welcome you to the neighborhood.</p>")
+            .setContent("<p class='tooltip-title'>The Commissioner <a href='http://thecommissionerbk.com/' target='_blank'> <svg class='icon popup-link'><use xlink:href='#icon-globe'/></svg></a></p><p class='tooltip-body'>247 5th Ave <a href='https://www.google.com/maps/dir/?saddr=&daddr=247+5th+Ave+Brooklyn+NY' target='_blank'><svg class='icon popup-link'><use xlink:href='#icon-bear-right'/></svg></a></p><p class='tooltip-body'>Welcome to Brooklyn! Join us on Friday night at one of our favorite spots in Park Slope for snacks (on us) and drinks (on you). If Hallie and I aren't exciting enough for you, the Sweet 16 will be on!</p>")
             .openOn(map);
 
     }
